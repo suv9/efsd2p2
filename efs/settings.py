@@ -43,6 +43,12 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
 ]
 
+EMAIL_HOST = 'smtp.sendgrid.net' # mail service smtp
+EMAIL_HOST_USER = 'apikey' # email id
+EMAIL_HOST_PASSWORD = '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' #password
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
